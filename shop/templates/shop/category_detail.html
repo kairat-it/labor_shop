@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container mt-5">
+        <h1>{{ category.name }}</h1>
+        <p>{{ category.description }}</p>
+        <h2>Товары</h2>
+        <ul class="list-group">
+            {% for product in products %}
+                <li class="list-group-item">
+                    <strong>{{ product.name }}</strong> - {{ product.price }} - {{ product.created_at }}
+                    <p>{{ product.description }}</p>
+                    <img src="{{ product.image }}" alt="{{ product.name }}" class="img-fluid">
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
