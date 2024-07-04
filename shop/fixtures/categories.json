@@ -1,0 +1,18 @@
+[
+    {
+        "model": "shop.category",
+        "pk": 1,
+        "fields": {
+            "name": "sport",
+            "description": "Sport shoes"
+        }
+    },
+    {
+        "model": "shop.category",
+        "pk": 2,
+        "fields": {
+            "name": "classic",
+            "description": "Clssic shoes"
+        }
+    }
+]
