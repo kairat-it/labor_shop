@@ -9,6 +9,7 @@ class Category(models.Model):
         return self.name
 
 class Product(models.Model):
+    objects = None
     name = models.CharField(max_length=255)
     description = models.TextField(blank=True, null=True)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
