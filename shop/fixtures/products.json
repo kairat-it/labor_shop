@@ -1,0 +1,24 @@
+[
+  {"model": "shop.product",
+  "pk": 1,
+  "fields": {"name": "Nike Air Max 95",
+    "description": "Nike Air Max 95 Essential был вдохновлен человеческим телом и бегущего ДНК. Он сочетает в себе невероятный комфорт ношения с привлекательным стилем. Легендарные боковые вставки представляют мышцы, в то время как Nike Air подставляет каждый шаг на пятке и передней части стопы.",
+    "category": 1,
+    "created_at": "2024-07-04T10:03:19.584Z",
+    "price": "12000.00",
+    "image": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/i1-fe4f44e2-cfd9-495e-9be1-e572868e350f/air-max-95-essential-herrenschuh-KffNK0.png"
+    }
+  },
+  {
+        "model": "shop.product",
+        "pk": 2,
+        "fields": {
+            "name": "Loafers by Dior Men",
+            "description": "Loafers are great for a relaxed look making them perfect for all your smart-casual fits. Be it the tailored trousers or cropped loose-fit jeans, loafers would work well with both traditional menswear and modern streetwear looks. One tip when it comes to loafers is that the chunkier the better.",
+            "category": 2,
+            "created_at": "2023-06-02T12:00:00Z",
+            "price": "4900.99",
+            "image": "https://assets.gqindia.com/photos/61499efbc88d5b766b103312/master/w_1600%2Cc_limit/Dior%2520Men.jpg"
+        }
+    }
+]
