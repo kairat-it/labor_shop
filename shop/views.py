@@ -10,10 +10,14 @@ def product_list(request):
     products = Product.objects.all()
     return render(request, 'shop/product_list.html', {'products': products})
 
-def category_detail(request, category_id):
-    category = get_object_or_404(Category, id=category_id)
-    products = Product.objects.filter(category=category)
+def category_detail(request, pk):
+    category = get_object_or_404(Category, pk=pk)
+    products = category.product_set.all()
     return render(request, 'shop/category_detail.html', {'category': category, 'products': products})
+
+def product_detail(request, pk):
+    product = get_object_or_404(Product, pk=pk)
+    return render(request, 'shop/product_detail.html', {'product': product})
 
 def add_category(request):
     if request.method == 'POST':
