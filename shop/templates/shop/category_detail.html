@@ -5,14 +5,18 @@
         <h1>{{ category.name }}</h1>
         <p>{{ category.description }}</p>
         <h2>Товары</h2>
-        <ul class="list-group">
+        <div class="row">
             {% for product in products %}
-                <li class="list-group-item">
-                    <strong>{{ product.name }}</strong> - {{ product.price }} - {{ product.created_at }}
-                    <p>{{ product.description }}</p>
-                    <img src="{{ product.image }}" alt="{{ product.name }}" class="img-fluid">
-                </li>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+
+                        <strong>{{ product.name }}</strong> - {{ product.price }} - {{ product.created_at }}
+                        <p>{{ product.description }}</p>
+                        <img src="{{ product.image }}" class="card-img-top w-100" alt="{{ product.name }}" class="img-fluid">
+
+                    </div>
+                 </div>
             {% endfor %}
-        </ul>
+        </div>
     </div>
 {% endblock %}
